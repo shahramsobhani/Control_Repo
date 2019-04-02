@@ -9,7 +9,7 @@ node /^master/ {
 	include role::masterserver
 }
 
-node "puppetmaster.us.lsst.org"{
+node "puppetmasterpo.us.lsst.org"{
 	include role::masterserver
 }
 
