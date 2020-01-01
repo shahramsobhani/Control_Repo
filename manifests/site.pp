@@ -1,6 +1,6 @@
 # This is the very default configuration, in case no match found in ENC
 node default {
-	file {' /root/README';
+	file {' /root/README':
 	ensure => file,
 	content => 'this is a readme',
 	}
