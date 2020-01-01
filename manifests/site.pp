@@ -4,7 +4,7 @@ node default {
 	ensure  => file,
 	content => 'this is a readme',
 	owner   => 'root',
-	
+	}
 node 'master.puppet.vm' {
   include role::masterserver
   }
@@ -14,4 +14,3 @@ node 'master.puppet.vm' {
 # that's why, puppet-master is the only definition here.
 #node /puppet-master/ {
 #	include role::it::puppet_master
-}
