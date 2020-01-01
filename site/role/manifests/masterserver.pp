@@ -1,5 +1,5 @@
 class role::masterserver{
   include profile::base
-  include profile::agent_nodes
-  include profile::puppetmasterpo
+#  include profile::agent_nodes
+#  include profile::puppetmasterpo
 }
