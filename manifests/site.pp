@@ -1,8 +1,9 @@
 # This is the very default configuration, in case no match found in ENC
 node default {
 	file {'/root/README':
-	ensure => file,
+	ensure  => file,
 	content => 'this is a readme',
+	owner   => 'root',
 	}
 #	include role::default
 # There is one situation, when deploying a new puppet master, in where the ENC doesn't exists in the puppet environment
