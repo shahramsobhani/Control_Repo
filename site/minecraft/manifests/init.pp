@@ -2,7 +2,7 @@ class minecraft {
   file {‘/opt/minecraft’:
     ensure => directory,
   }
-  file {‘/opt/minecraft/minecraft_server.1.12.2.jar’:
+  file {‘/opt/minecraft/server.jar’:
     ensure => file,
     source      => 'https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar',
   }
