@@ -1,12 +1,17 @@
 node default {
+  file { '/root/README':
+    ensure => file,
+    content => 'This is a readme',
+    owner   => 'root',
   }
+}
 node 'master.puppet.vm' {
-  include role::masterserver
-    file { '/root/README':
-      ensure => file,
-      content => "welcome to ${fqdn}\n",
-      owner   => 'root',
-      }
+  include role::master_server
+  file {'/root/README':
+    ensure => file,
+    content => “Welcome to ${fqdn}”,
+    owner => 'root',
+  }
 }
 node 'minetest.puppet.vm': {
   include role::minecraft_server
