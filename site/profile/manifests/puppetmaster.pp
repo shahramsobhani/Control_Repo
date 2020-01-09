@@ -3,5 +3,4 @@ class profile::puppetmaster {
 		command => 'puppet module install puppetlabs/vcsrepo',
 		path => ['/opt/puppetlabs/bin/','/bin'],
 	}
-
 }
